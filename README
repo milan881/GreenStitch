@@ -1,0 +1,61 @@
+# Login and Signup Backend API
+
+This is a backend application that provides RESTful APIs for user login and signup functionality. 
+It includes security features and JWT-based authentication. 
+The application is built with the Spring Boot framework and uses an H2 database for data storage.
+
+## Technology Stack
+
+ Spring boot + java 	
+
+## Prerequisites
+
+Before running the application, ensure that you have the following prerequisites installed:
+
+- Java Development Kit (JDK) 1.8
+- Postman or any REST API testing tool
+
+## Installation and Setup
+
+Follow these steps to install and set up the application:
+
+1. Clone the repository:
+	git clone <repository-url>
+
+2. Open any Ide of your choice and import the project
+
+3. Download all the Maven dependencies
+
+4. Run the Spring boot project 
+
+
+The application will start running on http://localhost:8080`.
+
+## API Endpoints
+
+The following API endpoints are available:
+
+- **POST http://localhost:8080/signUp : Creates a new user account.
+  - Request Body: { "username" : "your-username", "password" : "your-password" }
+
+- **POST http://localhost:8080/login : Authenticates a user and generates a JWT token.
+  - Request Body: { "username": "your-username", "password": "your-password" }
+
+## Testing the APIs
+
+You can test the APIs using a tool like Postman:
+
+1. Open Postman or any REST API testing tool.
+
+2. Send a POST request to `http://localhost:8080/signUp with the user details in the request body.
+
+3. Send a POST request to `http://localhost:8080/login with the user credentials in the request body. You will receive a JWT token in the response.
+
+## Configuration
+
+The application can be configured by modifying the application.properties file located in the `src/main/resources directory. Update the configuration properties as needed.
+
+
+
+
+	
